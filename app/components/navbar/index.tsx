@@ -73,7 +73,7 @@ const Navbar = () => {
               ))}
             </div>
             <Link href="/book-meetings">
-              <button className="bg-gradient-to-b hidden lg:flex from-[#521ED6] to-[#7E56E2] text-white px-6 py-2 rounded-[10px] border-1 border-[#8D6AE6] transition-all duration-300 ease-in-out hover:scale-105 transform shadow-lg hover:shadow-purple-500/25">
+              <button className="cursor-pointer bg-gradient-to-b hidden lg:flex from-[#521ED6] to-[#7E56E2] text-white px-6 py-2 rounded-[10px] border-1 border-[#8D6AE6] transition-all duration-300 ease-in-out hover:scale-105 transform shadow-lg hover:shadow-purple-500/25">
                 Get in Touch
               </button>
             </Link>
