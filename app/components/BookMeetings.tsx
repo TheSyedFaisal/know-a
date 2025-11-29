@@ -77,7 +77,7 @@ const BookMeetings = () => {
             }
           `}</style>
           <InlineWidget
-            url="https://calendly.com/obaidullah7897/30min"
+            url="https://calendly.com/adilfazal03/30-minute-meeting"
             styles={{
               height: "100%",
               width: "100%",
