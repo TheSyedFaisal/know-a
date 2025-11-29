@@ -61,7 +61,7 @@ const BookMeetings = () => {
           </h2>
           <p className="text-[12px] sm:text-[14px] lg:text-[16px] font-normal leading-[140%] text-gray-400 max-w-2xl mx-auto">
             Schedule a consultation to discuss your AI automation needs and how
-            we can help transform your business.
+            we can help you to transform your business.
           </p>
         </div>
 
