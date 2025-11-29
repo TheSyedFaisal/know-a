@@ -142,7 +142,7 @@ export default function AIAssistant() {
       <Link href="/book-meetings">
         <button
           className="bg-gradient-to-b from-[#521ED6] to-[#7E56E2]
-          sm:mt-8
+          sm:mt-8 cursor-pointer
           h-[48px] sm:h-[56px] lg:h-[64px]
           w-[150px] sm:w-[200px] lg:w-[240px]
           text-white font-bold rounded-[10px] border-2 border-[#8D6AE6]
