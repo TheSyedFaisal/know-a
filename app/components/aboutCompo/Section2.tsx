@@ -8,7 +8,8 @@ const Section2 = () => {
             style={{ transform: "perspective(700px) rotateX(12deg)" }}
         >
             <video
-                src="/AboutVideo.mp4"
+                src="https://framerusercontent.com/assets/8qsenQIIXYW3mI4IYIYBv9PMtkU.mp4"
+                typeof='video/mp4'
                 autoPlay
                 loop
                 muted

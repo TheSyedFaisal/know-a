@@ -103,7 +103,8 @@ const HeroSection = () => {
       <div className="absolute top-20 left-0 w-full h-full bg-gradient-to-b from-[#250278] to-[#021964] z-0"></div>
 
       <video
-        src="/HomeVideo.mp4"
+        src="https://framerusercontent.com/assets/1g8IkhtJmlWcC4zEYWKUmeGWzI.mp4"
+        typeof="video/mp4"
         autoPlay
         loop
         muted
