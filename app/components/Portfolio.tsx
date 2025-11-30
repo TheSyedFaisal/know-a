@@ -54,7 +54,7 @@ const Portfolio = () => {
 
                 {/* -------- ROW 1 (Right Direction) -------- */}
                     <div className="slider slider-right flex gap-3 mb-10 px-4">
-                    {[...portfolioItems, ...portfolioItems, ...portfolioItems, ...portfolioItems].map((item, i) => (
+                    {[...portfolioItems, ...portfolioItems,].map((item, i) => (
                         <div
                             key={i}
                             className="min-w-[200px] sm:min-w-[300px] md:min-w-[350px]
@@ -73,7 +73,7 @@ const Portfolio = () => {
 
                 {/* -------- ROW 2 (Left Direction + REVERSE IMAGES) -------- */}
                 <div className="slider slider-left flex gap-3 px-4">
-                    {[...portfolioItems, ...portfolioItems, ...portfolioItems, ...portfolioItems].map((item, i) => (
+                    {[...portfolioItems, ...portfolioItems].map((item, i) => (
                         <div
                             key={i}
                             className="min-w-[200px] sm:min-w-[300px] md:min-w-[350px]
