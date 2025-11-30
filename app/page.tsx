@@ -5,6 +5,7 @@ import Articles from "./components/about";
 import Footer from "./components/Footer";
 import HeroSection from "./components/hero-section";
 import { Skeleton } from "@/components/ui/skeleton";
+import Portfolio from "./components/Portfolio";
 const IntegrationsSection = dynamic(() => import("./components/IntegrationsSection"));
 const ProjectsSection = dynamic(() => import("./components/ProjectsSection"));
 const PersonalAssistantSlider = dynamic(() => import("./components/ServicesSection"));
@@ -75,6 +76,9 @@ export default function Home() {
         <Articles />
         <Suspense fallback={<Skeleton className="h-96 w-full" />}>
           <Services />
+        </Suspense>
+        <Suspense fallback={<Skeleton className="h-96 w-full " />}>
+          <Portfolio />
         </Suspense>
         <Suspense fallback={<Skeleton className="h-96 w-full" />}>
           <PersonalAssistantSlider />

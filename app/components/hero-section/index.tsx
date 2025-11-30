@@ -104,7 +104,6 @@ const HeroSection = () => {
 
       <video
         src="https://framerusercontent.com/assets/1g8IkhtJmlWcC4zEYWKUmeGWzI.mp4"
-        typeof="video/mp4"
         autoPlay
         loop
         muted
