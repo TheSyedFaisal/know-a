@@ -3,7 +3,6 @@ import Image from "next/image";
 
 const portfolioItems = [
     "/portfolio-Image.png",
-    "/portfolio-Image2.png",
     "/portfolio-Image3.png",
     "/portfolio-Image4.png",
     "/portfolio-Image5.png",
