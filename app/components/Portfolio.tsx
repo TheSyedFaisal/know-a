@@ -7,11 +7,12 @@ const portfolioItems = [
     "/portfolio-Image4.png",
     "/portfolio-Image5.png",
     "/portfolio-Image6.png",
-    "/portfolio-Image67.png",
+    "/portfolio-Image12.png",
     "/portfolio-Image8.png",
     "/portfolio-Image9.png",
     "/portfolio-Image10.png",
     "/portfolio-Image11.png",
+    
 ];
 
 const Portfolio = () => {
@@ -44,7 +45,7 @@ const Portfolio = () => {
                     </div>
 
                     <h2 className="text-5xl font-bold">
-                        Our Featured Projects
+                        Our Latest Web Creations
                     </h2>
                     <p className="text-gray-400 mt-4">
                         Explore our successful projects, delivering innovative solutions that drive growth and exceed client expectations

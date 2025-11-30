@@ -74,11 +74,11 @@ export default function Home() {
       <div className="relative">
         <HeroSection />
         <Articles />
-        <Suspense fallback={<Skeleton className="h-96 w-full" />}>
-          <Services />
-        </Suspense>
         <Suspense fallback={<Skeleton className="h-96 w-full " />}>
           <Portfolio />
+        </Suspense>
+        <Suspense fallback={<Skeleton className="h-96 w-full" />}>
+          <Services />
         </Suspense>
         <Suspense fallback={<Skeleton className="h-96 w-full" />}>
           <PersonalAssistantSlider />
