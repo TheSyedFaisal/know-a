@@ -34,7 +34,7 @@ const Portfolio = () => {
         // ROW 1 → Left to Right (Positive direction)
         gsap.to([row1, cloneRow1], {
             x: `-=${totalWidth1}`,
-            duration: 40,
+            duration: 20,
             ease: "none",
             repeat: -1,
             modifiers: {
@@ -45,7 +45,7 @@ const Portfolio = () => {
         // ROW 2 → Right to Left (Negative direction)
         gsap.to([row2, cloneRow2], {
             x: `+=${totalWidth2}`,
-            duration: 40,
+            duration: 20,
             ease: "none",
             repeat: -1,
             modifiers: {
