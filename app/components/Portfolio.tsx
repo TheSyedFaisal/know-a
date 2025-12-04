@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import Link from "next/link";
 
 const Portfolio = () => {
     const portfolioItems = [
@@ -10,10 +11,68 @@ const Portfolio = () => {
         "/portfolio-Image5.png",
         "/portfolio-Image6.png",
         "/portfolio-Image8.png",
-        "/portfolio-Image9.png",
+        "/portfolio-Image13.png",
         "/portfolio-Image10.png",
         "/portfolio-Image11.png",
+        "/portfolio-Image14.png",
+        "/portfolio-Image15.png",
+        "/portfolio-Image16.png",
     ];
+
+    const portfolioItemsPart1 = [
+  {
+    image: "/portfolio-Image3.png",
+    link: "https://www.dvcanada.com/"
+  },
+  {
+    image: "/portfolio-Image12.png",
+    link: "https://avanti-wines.co.uk/"
+  },
+  {
+    image: "/portfolio-Image4.png",
+    link: "https://dummy.link/site3"
+  },
+  {
+    image: "/portfolio-Image5.png",
+    link: "https://jenerg.com/"
+  },
+  {
+    image: "/portfolio-Image6.png",
+    link: "https://starfiresnowboards.com.au/"
+  },
+  {
+    image: "/portfolio-Image8.png",
+    link: "https://theyogadepartment.com"
+  }
+];
+
+const portfolioItemsPart2 = [
+  {
+    image: "/portfolio-Image13.png",
+    link: "https://wortax.io/"
+  },
+  {
+    image: "/portfolio-Image10.png",
+    link: "https://dummy.link/site8"
+  },
+  {
+    image: "/portfolio-Image11.png",
+    link: "https://www.dvcanada.com/"
+  },
+  {
+    image: "/portfolio-Image14.png",
+    link: "https://schoolonscreen.co.uk/"
+  },
+  {
+    image: "/portfolio-Image15.png",
+    link: "https://avanti-assets.co.uk/"
+  },
+  {
+    image: "/portfolio-Image16.jpeg",
+    link: "https://stixor.com/"
+  }
+];
+
 
     const row1Ref = useRef<HTMLDivElement>(null);
     const row2Ref = useRef<HTMLDivElement>(null);
@@ -67,21 +126,22 @@ const Portfolio = () => {
 
             {/* ROW 1 - Left to Right */}
             <div className="overflow-hidden w-full whitespace-nowrap">
-                <div ref={row1Ref} className="inline-flex gap-4 mx-4">
-                    {portfolioItems.map((item, i) => (
+                <div ref={row1Ref} className="inline-flex gap-4 mx-2">
+                    {portfolioItemsPart1.map((item, i) => (
+                        <Link href={item.link} key={i}>
                         <div
-                            key={i}
                             className="w-[200px] sm:w-[300px] md:w-[340px] 
                             h-[200px] sm:h-[300px] md:h-[340px]  bg-white rounded-xl p-1.5 md:p-3 flex-shrink-0"
                         >
                             <Image
-                                src={item}
+                                src={item.image}
                                 alt="Portfolio item"
                                 width={400}
                                 height={400}
                                 className="w-full h-full object-cover rounded-xl"
                             />
                         </div>
+                        </Link>
                     ))}
                 </div>
             </div>
@@ -89,20 +149,21 @@ const Portfolio = () => {
             {/* ROW 2 - Right to Left */}
             <div className="overflow-hidden w-full mt-5 md:mt-10 whitespace-nowrap ">
                 <div ref={row2Ref} className="inline-flex gap-4 mx-2">
-                    {portfolioItems.map((item, i) => (
+                    {portfolioItemsPart2.map((item, i) => (
+                        <Link href={item.link} key={i}>
                         <div
-                            key={i}
                             className="w-[200px] sm:w-[300px] md:w-[340px] 
                             h-[200px] sm:h-[300px] md:h-[340px]  bg-white rounded-xl p-1.5 md:p-3 flex-shrink-0"
                         >
                             <Image
-                                src={item}
+                                src={item.image}
                                 alt="Portfolio item"
                                 width={400}
                                 height={400}
-                                className="object-cover rounded-xl h-full w-full scale-x-[-1]"
+                                className="object-cover rounded-xl h-full w-full "
                             />
                         </div>
+                        </Link>
                     ))}
                 </div>
             </div>
